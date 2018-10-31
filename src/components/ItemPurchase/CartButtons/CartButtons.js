@@ -7,6 +7,9 @@ import Button from '@material-ui/core/Button';
 const styles = theme => ({
     root: {
     },
+    cartButtons: {
+        padding: '2px',
+    }
 });
 
 class CartButtons extends Component {
@@ -16,10 +19,10 @@ class CartButtons extends Component {
         return (
             <Grid container item xs={12} style={{display:'flex'}} spacing={8}>
             <Grid item xs={6}>
-                <Button variant="contained" color='primary' fullWidth style={{padding: '2px'}}>PICK UP IN STORE</Button>
+                <Button variant="contained" color='primary' fullWidth className={classes.cartButtons}>PICK UP IN STORE</Button>
             </Grid>
             <Grid item xs={6}>
-                <Button variant="contained" color='primary' fullWidth>ADD TO CART</Button>
+                <Button variant="contained" color='primary' fullWidth className={classes.cartButtons}>ADD TO CART</Button>
             </Grid>
             </Grid>
         );

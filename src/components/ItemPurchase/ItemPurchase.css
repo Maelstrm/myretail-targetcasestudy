@@ -1,14 +1,4 @@
 .material-icons {
     font-size: 1.3em;
-}
-
-.verticalDivider {
-    height:100%;
-    width:1px;
-    border:1px inset;
-    margin:5px;
-}
-.horizontalDivider {
-    border-left: 6px solid green;
-    height: 500px;
+    color: #cccccc;
 }

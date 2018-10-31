@@ -20,6 +20,16 @@ const styles = theme => ({
         justify: 'center',
         flexDirection: 'row',
     },
+    fullTitle: {
+        display: 'flex',
+        alignItems: 'center',
+        width: '100%',
+        marginBottom: '20px',
+        justify: 'center',
+        flexDirection: 'row',
+        paddingLeft: '25px',
+        paddingRight: '25px'
+    },
     img: {
         overflow: 'hidden',
         display: 'block',
@@ -38,7 +48,6 @@ const styles = theme => ({
         height: '60px',
     },
     title: {
-        fontSize: '1.5em',
         textAlign: 'center',
     },
     navButton: {
@@ -85,8 +94,8 @@ class ItemImages extends React.Component {
 
         return (
             <div className={classes.root}>
-                <Grid item xs={12} className={classes.full}>
-                    <Typography className={classes.title}>{this.props.data.title}</Typography>
+                <Grid item xs={12} className={classes.fullTitle}>
+                    <Typography variant="h6" className={classes.title}>{this.props.data.title}</Typography>
                 </Grid>
                 <Grid item xs={12} className={classes.full}>
                     <img
