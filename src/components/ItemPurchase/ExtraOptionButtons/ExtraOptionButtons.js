@@ -25,7 +25,7 @@ class ExtraOptionButtons extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Grid container item xs={12} style={{display:'flex'}} spacing={8}>
+            <Grid container item xs={12} style={{display:'flex', paddingLeft:'10px', paddingRight:'10px'}} spacing={8}>
             <Grid item xs={4}>
                 <Button label={{paddingBottom: '0px'}} fullWidth className={classes.extraOptionButtons}>ADD TO REGISTRY</Button>
             </Grid>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
+import Typography from '@material-ui/core/Typography';
+import './ItemHighlights.css'
 const styles = theme => ({
     leftOverall: {
         position: 'relative',
@@ -26,8 +27,22 @@ class ItemHighlights extends Component {
         const { classes } = this.props;
 
         return (
-            <Grid item xs={12} className={classes.root}>
-            Item HIGHLIGHTS
+            <Grid item xs={12} className={classes.root} style={{paddingLeft:'10px', paddingRight:'10px', marginTop:'30px', marginBottom:'30px'}}>
+                <Grid item xs={12}>
+                    <Typography variant="h4">product highlights</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <ul style={{paddingLeft:'20px'}}>
+                        {this.props.data.highlights.map((item,i) => {
+                            return (
+                                <li>
+                                    <Typography key={i} style={{fontSize:'.9em', fontWeight:'100'}} dangerouslySetInnerHTML={{__html: item}}>
+                                    </Typography>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </Grid>
             </Grid>
         );
     }

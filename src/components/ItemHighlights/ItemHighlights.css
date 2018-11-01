@@ -1,0 +1,4 @@
+/* Removed weight from <strong> in order emulate the example */
+strong {
+    font-weight: 100;
+}

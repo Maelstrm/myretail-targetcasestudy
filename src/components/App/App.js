@@ -16,7 +16,7 @@ import item from '../../data/item-data.json';
 // MaterialUI Styles
 const styles = theme => ({
   masterGrid: {
-    padding: '5%',
+    padding: '20px',
     maxWidth: '1440px',
   }
 });

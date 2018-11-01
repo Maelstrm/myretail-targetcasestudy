@@ -49,6 +49,7 @@ const styles = theme => ({
     },
     title: {
         textAlign: 'center',
+        fontWeight: '100'
     },
     navButton: {
         width: 60,

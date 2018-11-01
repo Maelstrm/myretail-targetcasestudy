@@ -1,4 +1,9 @@
 .material-icons {
-    font-size: 1.3em;
+    font-size: 2em;
     color: #cccccc;
+}
+
+.quantityToggle:hover {
+    color: #999999;
+    cursor: pointer;
 }
