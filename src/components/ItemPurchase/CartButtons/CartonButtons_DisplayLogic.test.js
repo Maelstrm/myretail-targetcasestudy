@@ -1,5 +1,5 @@
-import displayLogic from './CartonButtons_DisplayLogic'
+import * as funcs from './CartonButtons_DisplayLogic'
 
 test('check if purchaseChannelCode is working', () => {
-    expect(displayLogic.whichTodisplay(0)).toBe(1);
+    expect(funcs.whichTodisplay(0)).toBe(1);
   });

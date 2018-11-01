@@ -10,25 +10,15 @@ Steps to get the development environment running.
 2. `npm install`
 3. `npm start`
 
-
-### Completed Features
-
-High level list of items completed.
-
-- [x] Feature a
-- [x] Feature b
+Jest can be run using 'npm test'.
 
 ### Next Steps
 
 Features that you would like to add at some point in the future.
 
-- [ ] Feature c
+- [ ] Still need to fix testing feature
+- [ ] CI/CD not fully implemented
 
 ## Authors
 
-* Name of author(s)
-
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
+* Jakeh Clark
