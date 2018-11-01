@@ -53,11 +53,4 @@ const whichToDisplay = (purchasingCode) => {
         return 2
     }
 };
-
-const funcs = {
-    whichToDisplay();
-    CartonButtons_DisplayLogic();
-
-};
-
-export default funcs;
+export default {CartonButtons_DisplayLogic, whichToDisplay};
