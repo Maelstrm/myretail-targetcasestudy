@@ -45,6 +45,7 @@ class ItemPurchase extends Component {
         // Test to make sure data is in file
         // console.log('ItemPuchase data:', this.props.data);
     }
+    // Functios that handle the quantity toggle
     handleQuantityAdd = () => {
         this.setState({
             currentQuantity: this.state.currentQuantity + 1,
@@ -113,7 +114,7 @@ class ItemPurchase extends Component {
                     </Grid>
 
                     {/* Pickup in store + add to ShoppingCart */}
-                    <CartButtons style={{paddingLeft:'10px', paddingRight:'10px'}}/>
+                    <CartButtons data={this.props.data.purchasingChannelCode} style={{paddingLeft:'10px', paddingRight:'10px'}}/>
                 </Grid >
                 {/* Return Policy */}
                 <Grid item container xs={12} style={{ display: 'flex', alignItems: 'center', paddingLeft:'10px', paddingRight:'10px', marginTop:'23px' }} spacing={8}>

@@ -35,7 +35,7 @@ class ItemHighlights extends Component {
                     <ul style={{paddingLeft:'20px'}}>
                         {this.props.data.highlights.map((item,i) => {
                             return (
-                                <li>
+                                <li key={i}>
                                     <Typography key={i} style={{fontSize:'.9em', fontWeight:'100'}} dangerouslySetInnerHTML={{__html: item}}>
                                     </Typography>
                                 </li>

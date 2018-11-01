@@ -43,7 +43,8 @@ class App extends Component {
       // Data contained in the ItemPurchase component
       ItemPurchaseData: {
         price: itemData.Offers[0].OfferPrice[0],
-        promotions: itemData.Promotions
+        promotions: itemData.Promotions,
+        purchasingChannelCode: itemData.purchasingChannelCode,
       },
       // Data contained in the ItemHighlights component
       ItemHighlightsData: {

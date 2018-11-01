@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import moment from 'moment'
 import Ratings from 'react-ratings-declarative';
@@ -17,8 +16,6 @@ class SampleReview extends Component {
 
     render() {
         const { classes } = this.props;
-        // Currently, the format of the date in the JSON file is deprecated in moment.js, throwing a warning in the console.
-        var datePosted = moment(this.props.datePosted)
         console.log('sample rating', this.props.datePosted);
 
         return (
