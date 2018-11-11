@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests renders correctly with 0 1`] = `
+<div>
+  <WithStyles(Grid)
+    container={true}
+    item={true}
+    spacing={8}
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+    xs={12}
+  >
+    <WithStyles(Grid)
+      item={true}
+      xs={6}
+    >
+      <WithStyles(Button)
+        color="primary"
+        fullWidth={true}
+        variant="contained"
+      >
+        PICK UP IN STORE
+      </WithStyles(Button)>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={6}
+    >
+      <WithStyles(Button)
+        color="primary"
+        fullWidth={true}
+        variant="contained"
+      >
+        ADD TO CART
+      </WithStyles(Button)>
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+</div>
+`;
+
+exports[`tests renders correctly with 1 1`] = `
+<div>
+  <WithStyles(Grid)
+    container={true}
+    item={true}
+    spacing={8}
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+    xs={12}
+  >
+    <WithStyles(Grid)
+      item={true}
+      xs={6}
+    >
+      <WithStyles(Button)
+        disabled={true}
+        fullWidth={true}
+        variant="contained"
+      >
+        PICK UP IN STORE
+      </WithStyles(Button)>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={6}
+    >
+      <WithStyles(Button)
+        disabled={true}
+        fullWidth={true}
+        variant="contained"
+      >
+        ADD TO CART
+      </WithStyles(Button)>
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+</div>
+`;

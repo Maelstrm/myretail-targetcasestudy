@@ -24,6 +24,11 @@
     "test": "jest",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -34,6 +39,17 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "jest": "^23.6.0"
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "jest-transform-stub": "^1.0.0",
+    "react-test-renderer": "^16.6.1",
+    "regenerator-runtime": "^0.12.1"
   }
 }
